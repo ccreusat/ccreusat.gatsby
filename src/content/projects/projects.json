@@ -1,0 +1,130 @@
+[
+  {
+    "headline": "Work Project",
+    "date": "2015 - 2021",
+    "title": "Le Petit Ballon",
+    "text": "Lead Front-End Developer on this E-commerce website. Project, developed on Magento 1, Magento 2. Cross-Browsers compatibility.",
+    "tags": [
+      "HTML",
+      "Magento 1 & 2",
+      "Less",
+      "Grid / Flexbox",
+      "JavaScript",
+      "Back-End"
+    ],
+    "links": [
+      {
+        "url": "https://www.lepetitballon.com",
+        "class": "live",
+        "text": "Live site"
+      }
+    ],
+    "imageDesktop": "../../images/desktop/lpb-screen.jpg",
+    "imageMobile": "../../images/mobile/lpb-screen.jpg",
+    "nextProject": "project-2"
+  },
+  {
+    "headline": "Personal Project",
+    "date": "April 2021 - Present",
+    "title": "MindQuotes App",
+    "text": "Personal Fullstack project developed with the MERN Stack. Login or Register to add a new inspirational quote to the list. Delete an added quote from the user page.",
+    "tags": [
+      "MERN Stack",
+      "MongoDB",
+      "React",
+      "React Router",
+      "GraphQL",
+      "Heroku",
+      "CSS"
+    ],
+    "links": [
+      {
+        "url": "https://mindquotes-app.vercel.app/",
+        "text": "Live site",
+        "class": "live",
+        "icon": ""
+      },
+      {
+        "url": "https://github.com/ccreusat/mindquotes-app-client",
+        "text": "Client code",
+        "class": "button--github",
+        "icon": "devicon-github-original"
+      },
+      {
+        "url": "https://github.com/ccreusat/mindquotes-app-server",
+        "text": "Server code",
+        "class": "button--github",
+        "icon": "devicon-github-original"
+      }
+    ],
+    "imageDesktop": "../../images/desktop/mindquotes-screen.jpg",
+    "imageMobile": "../../images/mobile/mindquotes-screen.jpg",
+    "nextProject": "project-3"
+  },
+  {
+    "headline": "Work Project",
+    "date": "2020",
+    "title": "Le Petit Ballon Mobile App V2",
+    "text": "Access to the mobile website inside a Native app using a WebView Component. Users can login with a biometric identification. Push notification was added directly outside of React Native Env. Bundles built in xCode and Android Studio. Published on each store respectively.",
+    "tags": [
+      "React Native",
+      "Biometric",
+      "Bundles",
+      "App Store",
+      "xCode",
+      "Android Studio"
+    ],
+    "links": [
+      {
+        "url": "https://github.com/ccreusat/demo-app-v2",
+        "text": "Demo code",
+        "class": "button--invert button--github",
+        "icon": "devicon-github-original"
+      },
+      {
+        "url": "https://apps.apple.com/fr/app/le-petit-ballon/id1439212310",
+        "class": "store",
+        "icon": "devicon-apple-original"
+      },
+      {
+        "url": "https://play.google.com/store/apps/details?id=com.lepetitballon.app.lepetitballon&hl=fr&gl=US",
+        "class": "store",
+        "icon": "devicon-android-plain colored"
+      }
+    ],
+    "imageDesktop": "../../images/desktop/mindquotes-screen.jpg",
+    "imageMobile": "../../images/mobile/mindquotes-screen.jpg",
+    "nextProject": "project-4"
+  },
+  {
+    "headline": "Work Project",
+    "date": "2019",
+    "title": "Le Petit Ballon Mobile App V1",
+    "text": "Pocket App of the website. History of purchased wines, box of wines received. Scan a bottle of wine to get information about it. User had access to his profile, settings and quiz",
+    "tags": ["React Native", "Redux", "Expo", "Class Components", "API"],
+    "links": [
+      {
+        "url": "https://github.com/ccreusat/demo-app-v1",
+        "text": "Demo code",
+        "class": "button--invert button--github",
+        "icon": "devicon-github-original"
+      }
+    ],
+    "imageMobile": "../../images/mobile-app-v1@2x.png",
+    "nextProject": "project-5"
+  },
+  {
+    "headline": "Work Project",
+    "date": "2018",
+    "title": "Le Petit Ballon iPad App",
+    "text": "App used in LPB's Shop in Paris. Customer can check all the e-shop list of wines, answer a quizz to have specific wines to their tastes, ...",
+    "tags": ["React Native", "Expo", "Class Components", "API"],
+    "links": [
+      {
+        "url": ""
+      }
+    ],
+    "imageMobile": "../../images/lpb-ipad-app.png",
+    "nextProject": ""
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "fullname": "Clement Creusat",
+  "title": "Front-End Developer",
+  "text": "10 years experience of developing websites, web & mobile apps. Strong experience with Modern CSS (Grid, Flexbox) & User Experience Consulting.",
+  "images": [
+    "../../images/hero_macbook.jpg",
+    "../../images/hero_mobile.jpg",
+    "../../images/hero_ux.jpg"
+  ]
+}

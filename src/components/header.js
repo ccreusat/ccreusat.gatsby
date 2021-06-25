@@ -1,35 +1,50 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faHome, faFile, faCode } from "@fortawesome/free-solid-svg-icons"
+import downloadFile from "../static/clement_creusat_resume.pdf"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+const Header = ({ siteTitle }) => {
+  return (
+    <header>
+      <p>{siteTitle}</p>
+      <nav className="header__nav">
+        <Link title="Home" to="/">
+          <FontAwesomeIcon icon={faHome} size="lg" color="var(--blue)" />
         </Link>
-      </h1>
-    </div>
-  </header>
-)
+        <a
+          title="Github"
+          href="https://github.com/ccreusat"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon icon={faGithub} size="lg" color="var(--blue)" />
+        </a>
+        <a
+          title="Linkedin"
+          href="https://linkedin.com/in/ccreusat"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon icon={faLinkedin} size="lg" color="var(--blue)" />
+        </a>
+        <Link title="Frontend Mentor Challenges" to="/challenges">
+          <FontAwesomeIcon icon={faCode} size="lg" color="var(--blue)" />
+        </Link>
+        <a
+          title="Clement Creusar CV"
+          href={downloadFile}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon icon={faFile} size="lg" color="var(--blue)" />
+        </a>
+      </nav>
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

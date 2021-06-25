@@ -1,0 +1,11 @@
+{
+  "headline": "About me",
+  "title": "Passionate",
+  "text": [
+    " When I started 10 years ago as a Junior Front-End Developer, it was the beginning of HTML5, CSS3 and Responsive Websites.",
+    " Now, we can do a lot more. We have Modern CSS, Modern JS (ES5+), JS Frameworks to build Web and Mobile Apps.",
+    "Ten years later, I still love what I do: coding. I keep learning day by day new tools, solutions, frameworks and even Back-End Development."
+  ],
+  "image": "../../images/clement-creusat.jpg",
+  "recent": "Recent Projects"
+}

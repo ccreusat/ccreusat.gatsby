@@ -1,29 +1,55 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
+/* import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image" */
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Intro from "../components/intro"
+import About from "../components/about"
+import ProjectDetail from "../components/project-detail"
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
+
+    <Intro />
+    <About data={data} />
+
+    <section>
+      {/* {projects.map((project, index) => (
+        <ProjectDetail
+          key={index}
+          id={index + 1}
+          headline={project.headline}
+          title={project.title}
+          text={project.text}
+          tags={project.tags}
+          links={project.links}
+          imageDesktop={project.imageDesktop}
+          imageMobile={project.imageMobile}
+          nextProject={project.nextProject}
+        />
+      ))} */}
+    </section>
   </Layout>
 )
+
+export const query = graphql`
+  {
+    allAboutJson {
+      nodes {
+        text
+        title
+        headline
+        recent
+        image {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage

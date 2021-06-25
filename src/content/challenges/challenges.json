@@ -1,0 +1,199 @@
+[
+  {
+    "title": "Todo app",
+    "text": "The classic todo app with a few twists! This app includes a dark/light theme toggle and drag & drop reordering for anyone wanting an extra test.",
+    "tags": [
+      {
+        "lang": "HTML",
+        "class": "html5"
+      },
+      {
+        "lang": "CSS",
+        "class": "css3"
+      },
+      {
+        "lang": "JavaScript",
+        "class": "js"
+      },
+      {
+        "lang": "OS Dark Mode",
+        "class": "js"
+      },
+      {
+        "lang": "G@mer Easter Egg",
+        "class": ""
+      }
+    ],
+    "button": "JS Live site",
+    "live_url": "https://ccreusat-todo-app-js.vercel.app/",
+    "github": "JS Version",
+    "github_url": "https://github.com/ccreusat/todo-app-js",
+    "image": "../../images/frontendmentor/todo-app.jpg"
+  },
+  {
+    "title": "Sunnyside agency landing page",
+    "text": "This challenge will be a perfect test of your layout and responsive skills. There's a tiny bit of JS for the mobile menu, but the focus is HTML & CSS.",
+    "tags": [
+      {
+        "lang": "HTML",
+        "class": "html5"
+      },
+      {
+        "lang": "CSS",
+        "class": "css3"
+      },
+      {
+        "lang": "Grid / Flexbox",
+        "class": "css3"
+      },
+      {
+        "lang": "JavaScript",
+        "class": "js"
+      }
+    ],
+    "button": "Live site",
+    "live_url": "https://ccreusat-sunnyside-agency-page.vercel.app/",
+    "github": "Github",
+    "github_url": "https://github.com/ccreusat/sunnyside-agency-pages",
+    "image": "../../images/frontendmentor/sunnyside.jpg"
+  },
+  {
+    "title": "Social media dashboard with theme switcher",
+    "text": "This challenge will be a perfect chance to practice your Grid skills. The color theme switcher also adds a nice additional test.",
+    "tags": [
+      {
+        "lang": "React",
+        "class": "reactjs"
+      },
+      {
+        "lang": "TypeScript",
+        "class": "ts"
+      },
+      {
+        "lang": "OS Dark Mode",
+        "class": "js"
+      },
+      {
+        "lang": "CSS",
+        "class": "css3"
+      },
+      {
+        "lang": "Grid / Flexbox",
+        "class": "css3"
+      }
+    ],
+    "button": "Live site",
+    "live_url": "https://ccreusat-social-media-dashboard.vercel.app/",
+    "github": "Github",
+    "github_url": "https://github.com/ccreusat/social-media-dashboard",
+    "image": "../../images/frontendmentor/social-dashboard.jpg"
+  },
+  {
+    "title": "Photosnap multi-page website",
+    "text": "In this challenge, you'll be building the marketing site for a photo-sharing app. This will be a perfect opportunity to put your CSS Grid skills to the test!",
+    "tags": [
+      {
+        "lang": "HTML",
+        "class": "html5"
+      },
+      {
+        "lang": "SCSS",
+        "class": "sass"
+      },
+      {
+        "lang": "Grid / Flexbox",
+        "class": "css3"
+      },
+      {
+        "lang": "JavaScript",
+        "class": "js"
+      }
+    ],
+    "button": "Live site",
+    "live_url": "https://ccreusat-photosnap.vercel.app/",
+    "github": "Github",
+    "github_url": "https://github.com/ccreusat/photosnap-multi-page-website",
+    "image": "../../images/frontendmentor/photosnap.jpg"
+  },
+  {
+    "title": "Planets fact site",
+    "text": "In this challenge, you'll be building out an 8-page fact site for all planets in our solar system. This project will make an incredible portfolio piece when completed!",
+    "tags": [
+      {
+        "lang": "React",
+        "class": "reactjs"
+      },
+      {
+        "lang": "Styled Components",
+        "class": "styled"
+      },
+      {
+        "lang": "Grid / Flexbox",
+        "class": "css3"
+      }
+    ],
+    "button": "Live site",
+    "live_url": "https://ccreusat-planets-fact.vercel.app/",
+    "github": "Github",
+    "github_url": "https://github.com/ccreusat/planets-fact-site",
+    "image": "../../images/frontendmentor/planets.jpg"
+  },
+  {
+    "title": "Job listings with filtering",
+    "text": "In this challenge, you'll be using JavaScript to filter out jobs based on the categories selected.",
+    "tags": [
+      {
+        "lang": "React",
+        "class": "reactjs"
+      },
+      {
+        "lang": "SCSS",
+        "class": "sass"
+      },
+      {
+        "lang": "Custom CSS Properties",
+        "class": "css3"
+      },
+      {
+        "lang": "Grid / Flexbox",
+        "class": "css3"
+      }
+    ],
+    "button": "Live site",
+    "live_url": "https://ccreusat-jobs-listings.vercel.app/",
+    "github": "Github",
+    "github_url": "https://github.com/ccreusat/static-job-listings",
+    "image": "../../images/frontendmentor/jobs-listing.jpg"
+  },
+  {
+    "title": "Clock app",
+    "text": "This challenge will have you working with external APIs to set data based on a visitor's location. You'll also be using logic to set content depending on the time of day.",
+    "tags": [
+      {
+        "lang": "HTML",
+        "class": "html5"
+      },
+      {
+        "lang": "Custom CSS Properties",
+        "class": "css3"
+      },
+      {
+        "lang": "Grid / Flexbox",
+        "class": "css3"
+      },
+      {
+        "lang": "JavaScript",
+        "class": "js"
+      },
+      {
+        "lang": "API",
+        "class": "nodejs"
+      }
+    ],
+    "button": "Live site",
+    "live_url": "https://ccreusat-clock-app.vercel.app/",
+    "github": "Github",
+    "github_url": "https://github.com/ccreusat/clock-app",
+    "image": "../../images/frontendmentor/clock-app.jpg"
+  }
+]
