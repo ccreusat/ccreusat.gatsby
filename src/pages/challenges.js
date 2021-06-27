@@ -12,6 +12,7 @@ export const query = graphql`
     allChallengesJson {
       nodes {
         button
+        wip
         github
         github_url
         image {
@@ -72,6 +73,9 @@ const Challenges = ({ data }) => {
                   >
                     Live site
                   </a>
+                  {info.wip && (
+                    <span className="button disabled">{info.wip}</span>
+                  )}
                   <a
                     className="button button--invert button--github"
                     href={info.github_url}

@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "headline": "Work Project",
     "date": "2015 - 2021",
     "title": "Le Petit Ballon",
@@ -19,11 +20,13 @@
         "text": "Live site"
       }
     ],
-    "imageDesktop": "../../images/desktop/lpb-screen.jpg",
-    "imageMobile": "../../images/mobile/lpb-screen.jpg",
+    "device": "desktop",
+    "image": "../../images/projects/web-lepetitballon.jpg",
+    "imageMobile": "../../images/projects/mobile/web-lepetitballon.jpg",
     "nextProject": "project-2"
   },
   {
+    "id": "2",
     "headline": "Personal Project",
     "date": "April 2021 - Present",
     "title": "MindQuotes App",
@@ -57,11 +60,13 @@
         "icon": "devicon-github-original"
       }
     ],
-    "imageDesktop": "../../images/desktop/mindquotes-screen.jpg",
-    "imageMobile": "../../images/mobile/mindquotes-screen.jpg",
+    "device": "desktop",
+    "image": "../../images/projects/web-mindquotes.jpg",
+    "imageMobile": "../../images/projects/mobile/web-mindquotes.jpg",
     "nextProject": "project-3"
   },
   {
+    "id": "3",
     "headline": "Work Project",
     "date": "2020",
     "title": "Le Petit Ballon Mobile App V2",
@@ -92,11 +97,12 @@
         "icon": "devicon-android-plain colored"
       }
     ],
-    "imageDesktop": "../../images/desktop/mindquotes-screen.jpg",
-    "imageMobile": "../../images/mobile/mindquotes-screen.jpg",
+    "device": "mobile",
+    "image": "../../images/projects/mobile-lepetitballon-v2.png",
     "nextProject": "project-4"
   },
   {
+    "id": "4",
     "headline": "Work Project",
     "date": "2019",
     "title": "Le Petit Ballon Mobile App V1",
@@ -110,10 +116,12 @@
         "icon": "devicon-github-original"
       }
     ],
-    "imageMobile": "../../images/mobile-app-v1@2x.png",
+    "device": "mobile",
+    "image": "../../images/projects/mobile-lepetitballon-v1.png",
     "nextProject": "project-5"
   },
   {
+    "id": "5",
     "headline": "Work Project",
     "date": "2018",
     "title": "Le Petit Ballon iPad App",
@@ -124,7 +132,8 @@
         "url": ""
       }
     ],
-    "imageMobile": "../../images/lpb-ipad-app.png",
+    "device": "ipad",
+    "image": "../../images/projects/ipad-lepetitballon.png",
     "nextProject": ""
   }
 ]

@@ -1,10 +1,9 @@
 {
   "headline": "About me",
-  "title": "Passionate",
+  "title": "Passionate and Versatile",
   "text": [
-    " When I started 10 years ago as a Junior Front-End Developer, it was the beginning of HTML5, CSS3 and Responsive Websites.",
-    " Now, we can do a lot more. We have Modern CSS, Modern JS (ES5+), JS Frameworks to build Web and Mobile Apps.",
-    "Ten years later, I still love what I do: coding. I keep learning day by day new tools, solutions, frameworks and even Back-End Development."
+    "When I started 10 years ago as a Front-End Developer, it was the beginning of HTML5, CSS3 and RWD. Now, I can do more with Modern CSS, Modern JS, JS Frameworks to build apps.",
+    "I also have a great ability to adapt my scope. Project management by being freelance for 5 years. UI/UX consulting by collaborating with Product Managers and Designers."
   ],
   "image": "../../images/clement-creusat.jpg",
   "recent": "Recent Projects"

@@ -9,11 +9,16 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import smoothscroll from "smoothscroll-polyfill"
+
 import Header from "./header"
+import Footer from "./footer"
 import "@fontsource/poppins"
 import "@fontsource/poppins/500.css"
 import "@fontsource/poppins/700.css"
 import "./layout.css"
+
+smoothscroll.polyfill()
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -30,6 +35,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <main>{children}</main>
+      <Footer />
     </>
   )
 }

@@ -25,6 +25,7 @@
       }
     ],
     "button": "JS Live site",
+    "wip": "React Version",
     "live_url": "https://ccreusat-todo-app-js.vercel.app/",
     "github": "JS Version",
     "github_url": "https://github.com/ccreusat/todo-app-js",
