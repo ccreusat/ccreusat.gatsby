@@ -3,9 +3,9 @@ import PropTypes from "prop-types"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import { createApi } from "unsplash-js"
 
-const APIKEY = process.env.APIKEY
+const GATSBY_APIKEY = process.env.GATSBY_APIKEY
 const api = createApi({
-  accessKey: APIKEY,
+  accessKey: GATSBY_APIKEY,
 })
 
 const PhotoComp = ({ photo }) => {
