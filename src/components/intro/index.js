@@ -40,8 +40,8 @@ const Intro = () => {
       .then(result => {
         setPhotosResponse(result.response.results)
       })
-      .catch(() => {
-        console.log("something went wrong!")
+      .catch(e => {
+        console.log(e)
       })
   }, [])
 
