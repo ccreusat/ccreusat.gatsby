@@ -132,11 +132,11 @@ img {
   background-color: var(--dark);
 }
 
-.button--github i {
-  font-size: 28px;
+.button--github .svg-inline--fa {
+  /* font-size: 28px; */
   display: inline-block;
   vertical-align: middle;
-  margin-right: 1rem;
+  margin-right: 0.6rem;
 }
 
 .store {
@@ -153,9 +153,14 @@ img {
   background-color: var(--dark);
 }
 
-.store i {
-  font-size: 26px;
+.store .screen-reader-text {
+  opacity: 0;
+  display: none;
 }
+
+/* .store i {
+  font-size: 26px;
+} */
 
 .button:hover {
   -webkit-box-shadow: none;

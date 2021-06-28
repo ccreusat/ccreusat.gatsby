@@ -1,8 +1,27 @@
 import * as React from "react"
 import { GatsbyImage, getImage, withArtDirection } from "gatsby-plugin-image"
 import { Link } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faGithub,
+  faGooglePlay,
+  faApple,
+} from "@fortawesome/free-brands-svg-icons"
 
 const ProjectDetail = props => {
+  const renderIcons = icon => {
+    switch (icon) {
+      case "github":
+        return faGithub
+      case "apple":
+        return faApple
+      case "android":
+        return faGooglePlay
+      default:
+        return faGithub
+    }
+  }
+
   const handleNextProject = () => {
     if (props.nextProject !== "") {
       return (
@@ -69,8 +88,13 @@ const ProjectDetail = props => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      {link.icon && <i className={link.icon}></i>}
-                      {link.text}
+                      {link.icon && (
+                        <FontAwesomeIcon
+                          icon={renderIcons(link.icon)}
+                          size="lg"
+                        />
+                      )}
+                      <span className="screen-reader-text">{link.text}</span>
                     </a>
                   )
                 )
@@ -83,7 +107,6 @@ const ProjectDetail = props => {
                 <div className="browser__oval"></div>
               </div>
               {renderImages()}
-              {/* <GatsbyImage image={getImage(props.image)} alt={props.title} /> */}
             </div>
           ) : props.device === "ipad" ? (
             <div className="project__ipad">

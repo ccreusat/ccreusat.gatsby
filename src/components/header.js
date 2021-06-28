@@ -22,6 +22,9 @@ const Header = React.memo(({ siteTitle }) => {
         <Link title="Home" to="/">
           <FontAwesomeIcon icon={faHome} size="lg" color="var(--blue)" />
         </Link>
+        <Link title="Frontend Mentor Challenges" to="/challenges">
+          <FontAwesomeIcon icon={faCode} size="lg" color="var(--blue)" />
+        </Link>
         <a
           title="Github"
           href="https://github.com/ccreusat"
@@ -38,9 +41,6 @@ const Header = React.memo(({ siteTitle }) => {
         >
           <FontAwesomeIcon icon={faLinkedin} size="lg" color="var(--blue)" />
         </a>
-        <Link title="Frontend Mentor Challenges" to="/challenges">
-          <FontAwesomeIcon icon={faCode} size="lg" color="var(--blue)" />
-        </Link>
         <a
           title="Clement Creusar CV"
           href={downloadFile}

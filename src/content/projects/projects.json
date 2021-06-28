@@ -51,13 +51,13 @@
         "url": "https://github.com/ccreusat/mindquotes-app-client",
         "text": "Client code",
         "class": "button--github",
-        "icon": "devicon-github-original"
+        "icon": "github"
       },
       {
         "url": "https://github.com/ccreusat/mindquotes-app-server",
         "text": "Server code",
         "class": "button--github",
-        "icon": "devicon-github-original"
+        "icon": "github"
       }
     ],
     "device": "desktop",
@@ -84,17 +84,19 @@
         "url": "https://github.com/ccreusat/demo-app-v2",
         "text": "Demo code",
         "class": "button--invert button--github",
-        "icon": "devicon-github-original"
+        "icon": "github"
       },
       {
         "url": "https://apps.apple.com/fr/app/le-petit-ballon/id1439212310",
+        "text": "App store",
         "class": "store",
-        "icon": "devicon-apple-original"
+        "icon": "apple"
       },
       {
         "url": "https://play.google.com/store/apps/details?id=com.lepetitballon.app.lepetitballon&hl=fr&gl=US",
+        "text": "Play Store",
         "class": "store",
-        "icon": "devicon-android-plain colored"
+        "icon": "android"
       }
     ],
     "device": "mobile",
@@ -113,7 +115,7 @@
         "url": "https://github.com/ccreusat/demo-app-v1",
         "text": "Demo code",
         "class": "button--invert button--github",
-        "icon": "devicon-github-original"
+        "icon": "github"
       }
     ],
     "device": "mobile",

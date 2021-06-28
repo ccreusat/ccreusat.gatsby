@@ -1,5 +1,7 @@
 import * as React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 const ChallengeItem = props => {
   return (
@@ -33,7 +35,8 @@ const ChallengeItem = props => {
             target="_blank"
             rel="noreferrer"
           >
-            <i className=" devicon-github-original"></i>Github
+            <FontAwesomeIcon icon={faGithub} size="lg" />
+            Github
           </a>
         </div>
       </div>
