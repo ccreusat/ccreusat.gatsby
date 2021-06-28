@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-const About = () => {
+const About = React.memo(() => {
   const aboutQuery = useStaticQuery(graphql`
     {
       aboutJson {
@@ -55,6 +55,6 @@ const About = () => {
       </div>
     </section>
   )
-}
+})
 
 export default About

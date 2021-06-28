@@ -39,8 +39,6 @@ const ProjectDetail = props => {
     }
   }
 
-  console.log(props.imageMobile)
-
   return (
     <div id={`project-${props.id}`} className="section">
       <div className={props.device === "mobile" ? "project mobile" : "project"}>

@@ -12,7 +12,6 @@ import { useStaticQuery, graphql } from "gatsby"
 // import smoothscroll from "smoothscroll-polyfill"
 
 import Header from "./header"
-import Footer from "./footer"
 import "@fontsource/poppins"
 import "@fontsource/poppins/500.css"
 import "@fontsource/poppins/700.css"
@@ -35,7 +34,6 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <main>{children}</main>
-      <Footer />
     </>
   )
 }

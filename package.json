@@ -25,7 +25,8 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "smoothscroll-polyfill": "^0.4.4"
+    "smoothscroll-polyfill": "^0.4.4",
+    "unsplash-js": "^7.0.12"
   },
   "devDependencies": {
     "prettier": "2.2.1"

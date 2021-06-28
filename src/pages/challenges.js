@@ -5,7 +5,8 @@ import Seo from "../components/seo"
 
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { getImage } from "gatsby-plugin-image"
+import ChallengeItem from "../components/challengeItem"
 
 export const query = graphql`
   {
@@ -45,48 +46,7 @@ const Challenges = ({ data }) => {
       <section className="challenge">
         {challengesData.map((info, index) => {
           return (
-            <div key={index} className="challenge__box">
-              <div className="challenge__image">
-                <GatsbyImage image={image(info.image)} alt={info.title} />
-              </div>
-              <div className="challenge__content">
-                <h2>{info.title}</h2>
-                <p>{info.text}</p>
-                <div className="badge-container">
-                  {info.tags.map((tag, index) => (
-                    <span
-                      key={index}
-                      className={
-                        tag.class ? `badge badge--${tag.class}` : `badge `
-                      }
-                    >
-                      {tag.lang}
-                    </span>
-                  ))}
-                </div>
-                <div className="buttons-container flex">
-                  <a
-                    className="button"
-                    href={info.live_url}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Live site
-                  </a>
-                  {info.wip && (
-                    <span className="button disabled">{info.wip}</span>
-                  )}
-                  <a
-                    className="button button--invert button--github"
-                    href={info.github_url}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className=" devicon-github-original"></i>Github
-                  </a>
-                </div>
-              </div>
-            </div>
+            <ChallengeItem key={index} {...info} image={image(info.image)} />
           )
         })}
       </section>

@@ -28,7 +28,7 @@ const ProjectList = () => {
           }
           imageMobile {
             childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH)
+              gatsbyImageData
             }
           }
         }
@@ -41,22 +41,7 @@ const ProjectList = () => {
   return (
     <div>
       {projectsData.map((project, index) => {
-        return (
-          <ProjectDetail
-            key={project.id}
-            id={project.id}
-            headline={project.headline}
-            date={project.date}
-            title={project.title}
-            text={project.text}
-            tags={project.tags}
-            links={project.links}
-            device={project.device}
-            image={project.image}
-            imageMobile={project.imageMobile}
-            nextProject={project.nextProject}
-          />
-        )
+        return <ProjectDetail key={project.id} {...project} />
       })}
     </div>
   )

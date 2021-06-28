@@ -1,8 +1,50 @@
 import * as React from "react"
+import PropTypes from "prop-types"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { createApi } from "unsplash-js"
+
+const APIKEY = process.env.APIKEY
+const api = createApi({
+  accessKey: APIKEY,
+})
+
+const PhotoComp = ({ photo }) => {
+  const { user, urls } = photo
+
+  return (
+    <>
+      <img className="fit-image" src={urls.regular} alt={user.name} />
+      <a
+        className="credit"
+        target="_blank"
+        rel="noreferrer"
+        href={`https://unsplash.com/@${user.username}`}
+      >
+        {user.name}
+      </a>
+    </>
+  )
+}
 
 const Intro = () => {
+  const [dataPhoto, setPhotosResponse] = React.useState(null)
+  React.useEffect(() => {
+    const randomNumber = Math.floor(Math.random() * 15)
+    api.search
+      .getPhotos({
+        query: "coding",
+        orientation: "portrait",
+        per_page: 3,
+        page: randomNumber,
+      })
+      .then(result => {
+        setPhotosResponse(result.response.results)
+      })
+      .catch(() => {
+        console.log("something went wrong!")
+      })
+  }, [])
+
   const introQuery = useStaticQuery(graphql`
     {
       introJson {
@@ -41,9 +83,9 @@ const Intro = () => {
             </div>
           </div>
           <div className="hero__images">
-            {data.images.map((image, index) => (
-              <div key={index} className="hero__image">
-                <GatsbyImage image={getImage(image.src)} alt={image.alt} />
+            {dataPhoto?.map(photo => (
+              <div key={photo.id} className="hero__image">
+                <PhotoComp photo={photo} />
               </div>
             ))}
           </div>
@@ -51,6 +93,12 @@ const Intro = () => {
       </div>
     </section>
   )
+}
+
+Intro.propTypes = {
+  fullname: PropTypes.string,
+  title: PropTypes.string,
+  text: PropTypes.string,
 }
 
 export default Intro

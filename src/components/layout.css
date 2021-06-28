@@ -87,6 +87,15 @@ img {
   object-fit: cover;
 }
 
+.credit {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.8rem;
+  color: #fff;
+  font-size: 10px;
+  text-decoration: none;
+}
+
 .buttons-container {
   margin: 1rem 0;
   gap: 1rem;
@@ -167,6 +176,8 @@ header .button--invert {
 }
 
 nav {
+  margin: 0 auto;
+  padding: 2rem 0;
   text-align: right;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,9 +185,7 @@ nav {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 1rem;
   margin-left: auto;
 }
@@ -250,8 +259,10 @@ nav .icon-pdf {
 }
 
 .hero__image {
+  position: relative;
   min-width: 260px;
   width: 260px;
+  height: 400px;
   border-radius: 6px;
   overflow: hidden;
 }
@@ -515,6 +526,10 @@ nav .icon-pdf {
   padding: 0 24px;
 }
 
+.challenge__box {
+  padding: 2rem 1rem;
+}
+
 .challenge__box:nth-child(even) .challenge__image {
   order: 1;
 }
@@ -566,6 +581,12 @@ nav .icon-pdf {
   }
   .button span {
     display: inline;
+  }
+  nav {
+    margin-left: auto;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
   }
 }
 
@@ -866,6 +887,7 @@ nav .icon-pdf {
 
   .challenge__box {
     margin: 4rem auto;
+    padding: 0;
     gap: 2rem;
     display: flex;
     align-items: center;
