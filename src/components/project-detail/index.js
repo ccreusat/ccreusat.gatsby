@@ -94,7 +94,7 @@ const ProjectDetail = props => {
                           size="lg"
                         />
                       )}
-                      {link.text}
+                      <span className="screen-reader-text">{link.text}</span>
                     </a>
                   )
                 )

@@ -124,10 +124,6 @@ img {
   cursor: not-allowed;
 }
 
-.button span {
-  display: none;
-}
-
 .button--invert {
   background-color: var(--dark);
 }
@@ -246,21 +242,6 @@ nav .icon-pdf {
   -ms-grid-rows: auto;
   grid-template-rows: auto;
   gap: 20px;
-}
-
-.hero__images > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.hero__images > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-
-.hero__images > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
 }
 
 .hero__image {
@@ -583,9 +564,6 @@ nav .icon-pdf {
   header {
     display: flex;
     justify-content: space-between;
-  }
-  .button span {
-    display: inline;
   }
   nav {
     margin-left: auto;
