@@ -11,7 +11,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import downloadFile from "../static/clement_creusat_resume.pdf"
 
-const Header = React.memo(({ siteTitle }) => {
+const Header = ({ siteTitle }) => {
   return (
     <header>
       <Link className="site-title" to="/">
@@ -52,7 +52,7 @@ const Header = React.memo(({ siteTitle }) => {
       </nav>
     </header>
   )
-})
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
